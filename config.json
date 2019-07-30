@@ -1,0 +1,20 @@
+{
+"loginCreds":{
+"admin":{
+"username":"admin",
+"password":"admin123",
+"fullName":"Admin"
+},
+"john":{
+"username":"john",
+"password":"john123",
+"fullName":"John"
+}
+},
+"msgs":{
+"login":{
+"success":"Welcome %fullName%, "
+,"error":"Incorrect username and password"
+}
+}
+}
