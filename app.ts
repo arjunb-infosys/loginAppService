@@ -19,7 +19,7 @@ try{
  }
 });
 
-app.post('/test',function(req,res){
+app.get('/test',function(req,res){
     res.send("This is a test value");
 });
 
