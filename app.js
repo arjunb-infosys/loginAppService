@@ -1,9 +1,11 @@
-var express 		    = require('express');
-var app			        = express();	
-var request			    = require('request');
-var bodyParser          = require('body-parser');
-const appConfig = require('config.json')
+
+import { express } from 'express';
+var app = express();
+import { request } from 'request';
+import { bodyParser } from 'body-parser';
+import { appConfig } from 'config.json';
 var myPort= process.env.PORT || 3000;
+
 app.post('/authenticateUser',function(req,res){
  const userCreds = appConfig.loginCreds;
 try{
@@ -15,5 +17,11 @@ try{
  }catch(e){
  
  }
-})
+});
+
+app.post('/test',function(req,res){
+    res.send("This is a test value");
+});
+
+
 app.listen(myPort);
