@@ -1,9 +1,9 @@
 
-import { express } from 'express';
+var express = require('express');
 var app = express();
-import { request } from 'request';
-import { bodyParser } from 'body-parser';
-import { appConfig } from 'config.json';
+var request = require('request');
+var bodyParser = require('body-parser');
+var appConfig = require('config.json');
 var myPort= process.env.PORT || 3000;
 
 app.post('/authenticateUser',function(req,res){
