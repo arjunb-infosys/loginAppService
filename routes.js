@@ -20,10 +20,10 @@ res.send("Success");
 });
 router.get('/pendingData',function(req,res){
   let username = req.query.uname;
-
+let dataSet = config.data[username];
 if(uname && uname != ""){
   var data={
-  "val":config.data[username]
+  "val":JSON.stringfigy(dataSet)
     ,"success":"true"
   };
 res.json(data).end();
