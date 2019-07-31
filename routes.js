@@ -31,9 +31,10 @@ res.json(data).end();
 }else{
   res.json([]).end();
 }
-    }catch(e){
+    }catch(err){
     res.json({
-    "error":e
+    "error":JSON.stringify(err)
+      ,"uname":username
     }).end();
     }
 });
