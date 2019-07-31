@@ -19,7 +19,7 @@ router.get('/testing',function(req,res){
 res.send("Success");
 });
 router.get('/pendingData',function(req,res){
-  try{
+  /*try{
   let username = req.query.uname;
 let dataSet = config.data[username];
 if(uname && uname != ""){
@@ -27,7 +27,7 @@ if(uname && uname != ""){
   "val":dataSet
     ,"success":"true"
   };
-res.json(data).end();
+res.json(JSON.stringify(data)).end();
 }else{
   res.json([]).end();
 }
@@ -36,7 +36,25 @@ res.json(data).end();
     "error":err
       ,"uname":username
     }).end();
-    }
+    }*/
+  
+  res.send({
+    "dataSet":[{
+            "reqId":"A1234"
+            ,"status":"pending"
+        },{
+            "reqId":"K5511"
+            ,"status":"pending"
+        },{
+            "reqId":"L1911"
+            ,"status":"pending"
+        },{
+            "reqId":"L1912"
+            ,"status":"pending"
+        },{
+            "reqId":"Q29313"
+            ,"status":"pending"
+        }]}).end();
 });
 router.post('/authenticateUser',function(req,res){
   try{
