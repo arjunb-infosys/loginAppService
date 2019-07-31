@@ -18,7 +18,9 @@ const uuidv1 		= require('uuid/v1');
 router.get('/testing',function(req,res){
 res.send("Success");
 });
-
+router.get('/pendingData',function(req,res){
+res.json(config.data[req.body.username]).end();
+});
 router.post('/authenticateUser',function(req,res){
   try{
     const credConfig = config['loginCreds'];
