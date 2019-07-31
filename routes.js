@@ -24,7 +24,7 @@ router.get('/pendingData',function(req,res){
 let dataSet = config.data[username];
 if(uname && uname != ""){
   var data={
-  "val":JSON.stringfigy(dataSet)
+  "val":dataSet
     ,"success":"true"
   };
 res.json(data).end();
@@ -33,7 +33,7 @@ res.json(data).end();
 }
     }catch(err){
     res.json({
-    "error":JSON.stringify(err)
+    "error":err
       ,"uname":username
     }).end();
     }
