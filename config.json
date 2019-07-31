@@ -1,25 +1,53 @@
 {
-"loginCreds":{
-"admin":{
-"username":"admin",
-"password":"admin123",
-"fullName":"Admin"
-},
-"john":{
-"username":"john",
-"password":"john123",
-"fullName":"Johnson"
-},
-"rob":{
-"username":"rob",
-"password":"rob123",
-"fullName":"Robin"
-}
-},
-"msgs":{
-"login":{
-"success":"Welcome %fullName%, "
-,"error":"Incorrect username and password"
-}
-}
-}
+    "loginCreds":{
+    "admin":{
+    "username":"admin",
+    "password":"admin123",
+    "fullName":"Admin"
+    },
+    "john":{
+    "username":"john",
+    "password":"john123",
+    "fullName":"Johnson"
+    },
+    "rob":{
+    "username":"rob",
+    "password":"rob123",
+    "fullName":"Robin"
+    }
+    },
+    "msgs":{
+    "login":{
+    "success":"Welcome %fullName%, "
+    ,"error":"Incorrect username and password"
+    }
+    },
+    "data":{
+        "john":[{
+            "reqId":"A1234"
+            ,"status":"pending"
+        },{
+            "reqId":"K5511"
+            ,"status":"pending"
+        },{
+            "reqId":"L1911"
+            ,"status":"pending"
+        },{
+            "reqId":"L1912"
+            ,"status":"pending"
+        },{
+            "reqId":"Q29313"
+            ,"status":"pending"
+        }],
+        "rob":[{
+            "reqId":"P1444"
+            ,"status":"pending"
+        },{
+            "reqId":"L22211"
+            ,"status":"pending"
+        }],
+        "admin":[]
+
+    }
+    }
+    
