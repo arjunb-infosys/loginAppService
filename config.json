@@ -8,7 +8,12 @@
 "john":{
 "username":"john",
 "password":"john123",
-"fullName":"John"
+"fullName":"Johnson"
+},
+"rob":{
+"username":"rob",
+"password":"rob123",
+"fullName":"Robin"
 }
 },
 "msgs":{
