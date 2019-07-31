@@ -20,11 +20,15 @@ res.send("Success");
 });
 router.get('/pendingData',function(req,res){
   let username = req.query.uname;
-if(uname && uname != ""){
+  res.json({
+  "name":username
+    ,"test":"123"
+  }).end();
+/*if(uname && uname != ""){
 res.json(config.data[username]).end();
 }else{
   res.json([]).end();
-}
+}*/
 });
 router.post('/authenticateUser',function(req,res){
   try{
