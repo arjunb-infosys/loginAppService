@@ -19,6 +19,7 @@ router.get('/testing',function(req,res){
 res.send("Success");
 });
 router.get('/pendingData',function(req,res){
+  try{
   let username = req.query.uname;
 let dataSet = config.data[username];
 if(uname && uname != ""){
@@ -30,6 +31,11 @@ res.json(data).end();
 }else{
   res.json([]).end();
 }
+    }catch(e){
+    res.json({
+    "error":e
+    }).end();
+    }
 });
 router.post('/authenticateUser',function(req,res){
   try{
